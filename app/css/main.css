@@ -26,7 +26,29 @@ body textarea:required:valid {
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
   .main-mnu {
-    display: none; }
+    display: none;
+    min-width: 295px;
+    float: right;
+    background-color: #1c242c;
+    margin-top: 20px; }
+    .main-mnu ul li {
+      display: block;
+      line-height: 0;
+      padding: 0; }
+      .main-mnu ul li a {
+        background-color: transparent;
+        display: block;
+        text-align: right;
+        line-height: 48px;
+        padding: 0 20px;
+        font-size: 1.125em;
+        -webkit-transition: all 0.5s ease;
+        time-moz-transition: all 0.5s ease;
+        time-ms-transition: all 0.5s ease;
+        time-o-transition: all 0.5s ease;
+        timetransition: all 0.5s ease time; }
+        .main-mnu ul li a:hover {
+          background-color: #273646; }
 
   .phone {
     padding-right: 65px; } }
@@ -63,8 +85,7 @@ body textarea:required:valid {
     padding-right: 50px; }
   .phone-wrap .toggle-mnu {
     line-height: 34px;
-    width: 34px;
-    height: 34px; }
+    padding-top: 15px; }
 
   .logo img {
     width: 80px; } }
@@ -82,10 +103,12 @@ body textarea:required:valid {
 @media only screen and (min-width: 768px) {
   /* */ }
 /* Medium Devices, Desktops */
-@media only screen and (min-width: 992px) {
-  /* */ }
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {
-  /* */ }
+  .main-mnu {
+    display: block !important; }
+
+  a {
+    outline: none !important; } }
 
 /*# sourceMappingURL=main.css.map */

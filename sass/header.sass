@@ -60,6 +60,13 @@ b, strong
 		display: inline-block
 
 
+.trans
+	-webkit-transition: all .5s ease
+	time-moz-transition: all .5s ease
+	time-ms-transition: all .5s ease
+	time-o-transition: all .5s ease
+	timetransition: all .5s ease time
+
 .main_header
 	min-height: 620px
 	background-size: cover
@@ -125,10 +132,66 @@ b, strong
 		position: absolute
 		right: 0
 		top: 0
-		width: 48px
-		height: 48px
 		text-align: center
 		line-height: 48px
 
 
+/* нопка меню*/
+.toggle-mnu 
+	display: block
+	width: 28px
+	height: 28px
+	padding: 22px 0px
+	z-index: 1000
 
+
+
+.toggle-mnu span:after,
+.toggle-mnu span:before 
+	content: ""
+	position: absolute
+	left: 0
+	top: -9px
+	&:hover
+		background-color: $main-color
+
+
+.toggle-mnu span:after
+	top: 9px
+	&:hover
+		background-color: $main-color
+
+.toggle-mnu span 
+	position: relative
+	display: block
+	&:hover
+		background-color: $main-color
+
+
+.toggle-mnu span,
+.toggle-mnu span:after,
+.toggle-mnu span:before 
+	width: 100%
+	height: 2px
+	background-color: #fff
+	transition: all 0.3s
+	backface-visibility: hidden
+	border-radius: 2px
+	&:hover
+		background-color: $main-color
+
+
+
+/* on activation */
+.toggle-mnu.on span 
+	background-color: transparent
+
+.toggle-mnu.on span:before 
+	transform: rotate(45deg) translate(5px, 5px)
+
+.toggle-mnu.on span:after 
+	transform: rotate(-45deg) translate(7px, -8px)
+
+.toggle-mnu.on + #menu 
+	opacity: 1
+	visibility: visible

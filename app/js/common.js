@@ -1,4 +1,10 @@
 $(document).ready(function() {
+    //toggle-menu
+    $('.toggle-mnu').click(function(){
+        $(this).toggleClass('on');
+        $('.main-mnu').slideToggle();
+    });
+    //toggle-menu//
 
 	//Цели для Яндекс.Метрики и Google Analytics
 	$(".count_element").on("click", (function() {
