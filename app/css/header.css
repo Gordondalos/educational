@@ -59,6 +59,9 @@ a, a:hover, a:active, a:focus {
   font-weight: normal;
   color: #2c3949; }
 
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.375em; }
+
 h1 {
   font-size: 3em; }
 
@@ -69,7 +72,8 @@ h3 {
   font-size: 1.5em; }
 
 b, strong {
-  font-family: "RalewayBold", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
+  font-family: "RalewayBold", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-weight: normal; }
 
 .ulmnu, .main-mnu ul, .header-wrap ul {
   margin: 0;
@@ -294,12 +298,20 @@ b, strong {
   font-size: 1.375em;
   padding: 12px 20px;
   border-bottom: 3px solid #b97200;
-  transition: all 0.5s ease; }
+  transition: all 0.5s ease;
+  text-decoration: none; }
   .buttons:hover {
     cursor: pointer;
-    background-color: #ffb338; }
+    background-color: #ffb338;
+    text-decoration: none;
+    color: #111111; }
   .buttons:active {
-    background-color: #db8c0e; }
+    background-color: #db8c0e;
+    text-decoration: none;
+    color: #111111; }
+  .buttons:focus {
+    color: #111111;
+    text-decoration: none; }
 
 .arrow-buttom {
   display: inline-block;

@@ -1,5 +1,8 @@
 @import "../bourbon/bourbon"
 
+@import "_var"
+
+
 *::-webkit-input-placeholder
 	color: #fff
 	opacity: 1
@@ -23,7 +26,95 @@ body input:required:valid,
 body textarea:required:valid
 	color: #fff
 
-//Custom Styles Here
+//Custom Styles
+
+
+
+.homesect
+	background-color: #f9f9f9
+	padding-top: 70px
+	display: block
+	position: relative
+	&::before
+		content: ''
+		position: absolute
+		top: -6px
+		background-image: url("../img/bah_1.png")
+		background-repeat: repeat-x
+		height: 6px
+		width: 100%
+	.section-head
+		margin-bottom: 80px
+
+		h2
+			text-align: center
+			position: relative
+			&::after
+				position: absolute
+				content: ''
+				background-color: $main-color
+				height: 4px
+				width: 165px
+				bottom: -30px
+				left: 50%
+				transform: translate(-50%,0)
+		a
+			&:hover
+				text-decoration: none
+
+
+		p
+			margin-top: 60px
+			text-align: justify
+			font-size: em(15px)
+			a
+				font-family: "RalewayBold", $helvetica
+
+
+	.section-bottom
+		background-color: #e5e5e5
+		padding: 50px 0
+		text-align: center
+
+.section-content
+	min-height: 548px
+	display: block
+
+
+.section-content
+	background-image: url("../img/s1_gray_bg.png")
+	background-repeat: no-repeat
+	background-position: bottom
+	padding-bottom: 90px
+	position: relative
+
+	.s1-bottom-triangle
+		position: absolute
+		width: 100%
+		height: 90px
+		background-image: url("../img/s1_triangle.svg")
+		bottom: 0
+		background-position: top center
+		background-repeat: no-repeat
+		-webkit-background-size: cover
+		background-size: cover
+
+.info-item
+	padding-left: 34px
+	min-width: 264px
+	line-height: em(18px)
+
+	h4
+		a
+
+			font-size: em(24px)
+			line-height: em(14px)
+			text-decoration: underline
+			text-transform: none
+	p
+		font-size: em(16px)
+
+
 
 
 //ALWAYS END

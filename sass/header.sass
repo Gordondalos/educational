@@ -1,8 +1,7 @@
 @import "../bourbon/bourbon.scss"
 @import "fonts"
 
-$main-color: #f39f18
-$headers-color: #2c3949
+@import "_var"
 
 
 body
@@ -37,6 +36,7 @@ a, a:hover, a:active, a:focus
 
 h1, h2, h3, h4, h5, h6
 	@extend .headers
+	line-height: em(22px)
 
 h1
 	font-size: em(48px)
@@ -49,6 +49,8 @@ h3
 
 b, strong
 	font-family: "RalewayBold", $helvetica
+	font-weight: normal
+
 
 
 .ulmnu
@@ -292,12 +294,22 @@ b, strong
 	padding: 12px 20px
 	border-bottom: 3px solid #b97200
 	transition: all .5s ease
+	text-decoration: none
 
 	&:hover
 		cursor: pointer
 		background-color: #ffb338
+		text-decoration: none
+		color: #111111
 	&:active
 		background-color: #db8c0e
+		text-decoration: none
+		color: #111111
+	&:focus
+		color: #111111
+		text-decoration: none
+
+
 
 .arrow-buttom
 	display: inline-block
