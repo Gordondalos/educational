@@ -1,26 +1,26 @@
 *::-webkit-input-placeholder {
-  color: #666;
+  color: #fff;
   opacity: 1; }
 
 *:-moz-placeholder {
-  color: #666;
+  color: #fff;
   opacity: 1; }
 
 *::-moz-placeholder {
-  color: #666;
+  color: #fff;
   opacity: 1; }
 
 *:-ms-input-placeholder {
-  color: #666;
+  color: #fff;
   opacity: 1; }
 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid {
-  color: #666; }
+  color: #fff; }
 
 body input:required:valid,
 body textarea:required:valid {
-  color: #666; }
+  color: #fff; }
 
 /*==========  Desktop First Method  ========== */
 /* Large Devices, Wide Screens */
@@ -51,10 +51,16 @@ body textarea:required:valid {
           background-color: #273646; }
 
   .phone {
-    padding-right: 65px; } }
+    padding-right: 65px; }
+
+  .arrow-buttom {
+    margin-top: 60px; } }
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
-  /* */ }
+  .header-wrap {
+    margin-top: 0; }
+    .header-wrap h1 {
+      margin-top: 0; } }
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
   /*Disable Animation on Mobile Devices */
