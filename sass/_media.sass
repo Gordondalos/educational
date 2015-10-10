@@ -46,6 +46,8 @@
 
 	.arrow-buttom
 		margin-top: 60px
+	.info-item
+		margin: 40px 0
 
 
 /* Medium Devices, Desktops */
@@ -54,6 +56,20 @@
 		margin-top: 0
 		h1
 			margin-top: 0
+	.section-content
+		background-position: bottom
+	.info-item-wrap:nth-child(4)
+		.info-item
+			padding-right: 100px
+
+
+@media only screen and (max-width : 800px)
+	.info-item-wrap:nth-child(4)
+		.info-item
+			padding-right: 98px
+
+
+
 
 
 /* Small Devices, Tablets */
@@ -79,6 +95,35 @@
 		-o-animation: none !important
 		-ms-animation: none !important
 		animation: none !important
+	.info-item
+		min-width: 100%
+		margin-top: 0
+	.s1-bottom
+		.info-item-wrap:nth-child(2)
+			.info-item
+				margin-top: 20px
+
+
+
+	.info-item-wrap:last-child
+		.info-item
+			p
+				border-color: transparent
+
+
+
+
+	.section_1
+		.section-content
+			background-position: bottom
+
+
+
+
+
+
+
+
 
 
 /* Extra Small Devices, Phones */
