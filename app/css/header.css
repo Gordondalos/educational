@@ -313,7 +313,7 @@ b, strong {
     color: #111111;
     text-decoration: none; }
 
-.arrow-buttom {
+.arrow-bottom {
   display: inline-block;
   width: 40px;
   height: 40px;
@@ -323,7 +323,8 @@ b, strong {
   margin-top: 40px;
   opacity: 0.7;
   transition: all 0.25s ease; }
-  .arrow-buttom:hover {
-    opacity: 1; }
+  .arrow-bottom:hover {
+    opacity: 1;
+    cursor: pointer; }
 
 /*# sourceMappingURL=header.css.map */

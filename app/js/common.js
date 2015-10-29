@@ -17,7 +17,8 @@ $(document).ready(function() {
     });
 
     $(".arrow-bottom").click(function() {
-        $("html, body").animate({ scrollTop: $(".main-head").height()+120 }, "slow");
+        //alert(1);
+        $("html, body").animate({ scrollTop: $(".section_1").height()-320 }, 3000);
         return false;
     });
 
@@ -146,7 +147,7 @@ $(document).ready(function() {
     $(".forms").submit(function() {
         $.ajax({
             type: "POST",
-            url: "mail.php",
+            url: "../app/mail.php",
             data: $(this).serialize()
         }).done(function() {
             alert("Спасибо за заявку!");
